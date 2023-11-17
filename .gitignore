@@ -1,0 +1,9 @@
+# .gitignore
+
+# Virtual environment
+venv/
+virtualenv/
+
+# Dependency files
+requirements.txt
+Pipfile.lock
