@@ -20,11 +20,11 @@ for repo_dict in repo_dicts:
     repo_names.append(repo_dict['name'])
     stars.append(repo_dict['stargazers_count'])
 
-# build hover texts
-owner = repo_dict['owner']['login']
-description = repo_dict['description']
-hover_text = f"{owner}<br />{description}"
-hover_texts.append(hover_text)
+    # build hover texts
+    owner = repo_dict['owner']['login']
+    description = repo_dict['description']
+    hover_text = f"{owner}<br />{description}"
+    hover_texts.append(hover_text)
 
 #make vis
 title = "Most-Starred Python Projects on Github"
