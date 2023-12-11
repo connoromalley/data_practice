@@ -3,7 +3,13 @@
 # Virtual environment
 venv/
 virtualenv/
+venv_project/
 
 # Dependency files
 requirements.txt
 Pipfile.lock
+
+db.sqlite3
+
+learning_logs/__pycache__/
+learning_logs/migrations
