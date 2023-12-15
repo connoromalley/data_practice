@@ -12,11 +12,11 @@ class Topic(models.Model):
     
 class Entry(models.Model):
     """Something specific learned about a topic."""
-    topic = models.ForeignKey(Topic, on_delete+models.CASCADE)
+    topic = models.ForeignKey(Topic, on_delete = models.CASCADE)
     text = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
 
-    Class Meta:
+    class Meta:
         verbose_name_plural = 'entries'
 
     def __str__(self):
